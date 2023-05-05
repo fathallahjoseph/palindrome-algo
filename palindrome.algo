@@ -1,0 +1,37 @@
+FUNCTION palindrome(text1:string;) : BOOLEAN
+
+VAR
+//declaration two conteurs to compare i and j//
+  i=INTEGER;
+  j=INTEGER;
+  
+BEGIN
+//boocle to compare world first caractére with last caractére//
+j=text1.lenght
+    FOR i FROM 0 TO tenxt1.lenght-1 STEP 1  DO
+        IF (text1[i]==text1[j]) THEN
+         return true
+           ELSE
+       return false
+       i=text1.lenght+1
+        END_IF
+        j= j-1;
+    END_FOR
+END panadrom(text1)
+ALGORITHM PutText1
+VAR
+  Text1=STRING;
+BEGIN
+  read(Text1)
+  REPEAT
+  //input Text1//
+    read(Text1)
+    //boocle to write Text1//
+  UNTIL (Text1.lenght<15)
+  IF (palindrome(Text1)) THEN
+  //if Text1 = palindrome, write "your world is palindrome"//
+    write("your world is palindrome")
+    //else Text1 not palindrome, write "your world is not palindrome"//
+     ELSE write("your world is not palindrome")
+  END_IF
+END
